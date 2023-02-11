@@ -125,14 +125,11 @@ void main() {
 			system("cls");
 			cout << "Введите n: ";
 			cin >> n;
-			if (n == 0) {
-				cout << "Данное число не положительно и не отрицательно" << endl << endl;
-			}
 			if (n > 0) {
 				cout << "Данное число положительно" << endl << endl;
 			}
-			if (n < 0) { 
-				cout << "Данное число отрицательно" << endl << endl;
+			else {
+				cout << "Данное число не положительно" << endl << endl;
 			}
 
 			break;
@@ -168,4 +165,3 @@ double second(double x, double eps) {
 
 	return sum;
 }
-
