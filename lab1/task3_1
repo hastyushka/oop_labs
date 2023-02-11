@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+void main() {
+	setlocale(LC_ALL, "RUS");
+	int n;
+	cout << "Введите число n:";
+	cin >> n;
+	for (int i = n; i > 0; i--) {
+		if (n % i == 0) {
+			cout << i << endl;
+		}
+	}
+}
