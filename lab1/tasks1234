@@ -135,12 +135,24 @@ void main() {
 						res4 += r4;
 					}
 
-					cout << "Результатом вычислений будет число: " << res4;
+					cout << "Результатом вычислений будет число: " << res4 << endl;
 					break;
 				}
 
 				case 5: {
 					system("cls");
+					int i5, j5, n5; 
+					cout << "Введите число n: ";
+					cin >> n5;
+					float s5 = 0, sum5, res5 = 0;
+					for (i5 = 1; i5 <= n5; i5++) {
+						for (j5 = 1; j5 <= i5; j5++) {
+							sum5 = 1. / (i5 + 2 * j5);
+							res5 += sum5;
+						}
+						s5 += res5;
+					}
+					cout << "Результатом вычислений будет число " << res5 << endl;
 					break;
 				}
 
