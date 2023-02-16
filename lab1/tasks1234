@@ -120,6 +120,22 @@ void main() {
 
 				case 4: {
 					system("cls");
+					int n4, x4;
+					float s4, r4 = 0, res4 = 0;
+					cout << "Введите число n: " << endl;
+					cin >> n4;
+					cout << "Введите число х: " << endl;
+					cin >> x4;
+
+					for (int k = 1; k <= n4; k++) {
+						for (int m = k; m <= n4; m++) {
+							s4 = (x4 + k) / m;
+							r4 = r4 + s4;
+						}
+						res4 += r4;
+					}
+
+					cout << "Результатом вычислений будет число: " << res4;
 					break;
 				}
 
