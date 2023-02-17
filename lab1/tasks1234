@@ -158,6 +158,31 @@ void main() {
 
 				case 6: {
 					system("cls");
+					int count6 = 0;
+					float af, as, a6, an;
+
+					cout << "Введите первое число: " << endl;
+					cin >> af;
+					cout << "Введите второе число: " << endl;
+					cin >> as;
+
+					for (int i = 3; i <= 10; i++) {
+						cout << "Введите следующее число: ";
+						cin >> a6;
+						an = a6;
+						if ((as > af) && (as > an)) {
+							cout << "Число " << as << " больше двух соседних"<<endl << endl;
+							count6++;
+							af = as;
+							as = an;
+						}
+						else {
+							cout << "Число " << as << " не больше двух соседних"<<endl << endl;
+							af = as;
+							as = an;
+						}
+					}
+					cout << "Количество чисел, больших по значению, чем свои соседи, равно " << count6 << endl << endl;
 					break;
 				}
 
