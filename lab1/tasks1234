@@ -188,6 +188,12 @@ void main() {
 
 				case 7: {
 					system("cls");
+					int i7 = 1, j7 = 1;
+					float p7 = 1;
+					for (i7 = 1, j7 = 1; (i7 <= 20 && j7 <= 20); i7++, j7++) {
+						p7 *= 1. / (i7 + j7 * j7);
+					}
+					cout << "Результат равен " << p7;
 					break;
 				}
 				 
